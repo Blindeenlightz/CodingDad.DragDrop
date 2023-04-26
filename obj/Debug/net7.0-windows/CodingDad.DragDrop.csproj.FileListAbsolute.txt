@@ -1,6 +1,0 @@
-C:\Users\jay_b\OneDrive\Documents\My_Projects\WPF_Common\DragDrop\obj\Debug\net7.0-windows\CodingDad.DragDrop.csproj.AssemblyReference.cache
-C:\Users\jay_b\OneDrive\Documents\My_Projects\WPF_Common\DragDrop\obj\Debug\net7.0-windows\CodingDad.DragDrop.g.resources
-C:\Users\jay_b\OneDrive\Documents\My_Projects\WPF_Common\DragDrop\obj\Debug\net7.0-windows\CodingDad.DragDrop.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\jay_b\OneDrive\Documents\My_Projects\WPF_Common\DragDrop\obj\Debug\net7.0-windows\CodingDad.DragDrop.AssemblyInfoInputs.cache
-C:\Users\jay_b\OneDrive\Documents\My_Projects\WPF_Common\DragDrop\obj\Debug\net7.0-windows\CodingDad.DragDrop.AssemblyInfo.cs
-C:\Users\jay_b\OneDrive\Documents\My_Projects\WPF_Common\DragDrop\obj\Debug\net7.0-windows\CodingDad.DragDrop.csproj.CoreCompileInputs.cache
