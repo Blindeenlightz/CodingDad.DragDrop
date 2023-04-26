@@ -318,7 +318,7 @@ namespace CodingDad.DragDrop
             }
         }
 
-        private UIElement CreatePreviewPresenter (IDragInfo dragInfo, UIElement visualTarget, UIElement sender)
+        private UIElement? CreatePreviewPresenter (IDragInfo dragInfo, UIElement visualTarget, UIElement sender)
         {
             var visualSource = dragInfo?.VisualSource;
             if (visualSource is null)

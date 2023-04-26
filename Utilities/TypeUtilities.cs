@@ -9,7 +9,7 @@ namespace CodingDad.DragAndDrop
 {
     public static class TypeUtilities
     {
-        public static IEnumerable CreateDynamicallyTypedList (IEnumerable source)
+        public static IEnumerable? CreateDynamicallyTypedList (IEnumerable source)
         {
             var type = GetCommonBaseClass(source);
 
@@ -20,19 +20,19 @@ namespace CodingDad.DragAndDrop
 
             foreach (var o in source)
             {
-                addMethod.Invoke(list, new [] { o });
+                addMethod?.Invoke(list, new [] { o });
             }
 
             return list as IEnumerable;
         }
 
-        public static Type GetCommonBaseClass (IEnumerable e)
+        public static Type? GetCommonBaseClass (IEnumerable e)
         {
             var types = e.Cast<object>().Select(o => o.GetType()).ToArray();
             return GetCommonBaseClass(types);
         }
 
-        public static Type GetCommonBaseClass (Type [] types)
+        public static Type? GetCommonBaseClass (Type [] types)
         {
             if (types.Length == 0)
             {
@@ -89,7 +89,7 @@ namespace CodingDad.DragAndDrop
         /// </summary>
         /// <param name="enumerable">The enumerable.</param>
         /// <returns>Returns a list.</returns>
-        public static IList TryGetList (this IEnumerable enumerable)
+        public static IList? TryGetList (this IEnumerable enumerable)
         {
             if (enumerable is ICollectionView collectionView)
             {
