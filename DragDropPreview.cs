@@ -34,11 +34,11 @@ namespace CodingDad.DragDrop
                                           typeof(DragDropPreview),
                                           new FrameworkPropertyMetadata((DataTemplateSelector)null));
 
-        private IDragInfo _dragInfo = null;
+        private IDragInfo? _dragInfo = null;
 
         private Rect _visualSourceItemBounds = Rect.Empty;
 
-        private UIElement _visualTarget = null;
+        private UIElement? _visualTarget = null;
 
         public DragDropPreview (UIElement rootElement, IDragInfo dragInfo, UIElement visualTarget, UIElement sender)
         {

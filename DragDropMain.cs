@@ -471,9 +471,9 @@ namespace CodingDad.DragAndDrop
                                                           typeof(DragDropMain),
                                                           new PropertyMetadata(default(bool)));
 
-        private static object _clickSupressItem;
+        private static object? _clickSupressItem;
 
-        private static DragInfo _dragInfo;
+        private static DragInfo? _dragInfo;
 
         private static bool _dragInProgress;
 
@@ -503,7 +503,7 @@ namespace CodingDad.DragAndDrop
         /// </summary>
         public static IRootElementFinder DefaultRootElementFinder { get; } = new RootElementFinder();
 
-        private static DragDropEffectPreview DragDropEffectPreview
+        private static DragDropEffectPreview? DragDropEffectPreview
         {
             get => dragDropEffectPreview;
             set
@@ -518,7 +518,7 @@ namespace CodingDad.DragAndDrop
             }
         }
 
-        private static DragDropPreview DragDropPreview
+        private static DragDropPreview? DragDropPreview
         {
             get => dragDropPreview;
             set
@@ -528,7 +528,7 @@ namespace CodingDad.DragAndDrop
             }
         }
 
-        private static DropTargetAdorner DropTargetAdorner
+        private static DropTargetAdorner? DropTargetAdorner
         {
             get => dropTargetAdorner;
             set
@@ -2355,7 +2355,7 @@ namespace CodingDad.DragAndDrop
             };
         }
 
-        private static DragDropPreview? GetDragDropPreview (IDragInfo dragInfo, UIElement visualTarget, UIElement sender)
+        private static DragDropPreview? GetDragDropPreview (IDragInfo dragInfo, UIElement? visualTarget, UIElement sender)
         {
             var visualSource = dragInfo?.VisualSource;
             if (visualSource is null)
